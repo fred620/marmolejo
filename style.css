@@ -1,0 +1,199 @@
+/* General Reset & Typography */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+/* Background GIFs per page */
+.home-bg {
+  background-image: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMXd3dmE1ZnE1a3lkcDFvbHphMGpmY2JndXN3ejZsdWlndWwxamJqeiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/78XCFBGOlS6keY1Bil/giphy.gif');
+}
+
+.projects-bg {
+  background-image: url('https://i.gifer.com/3otv.gif');
+}
+
+.work-bg {
+  background-image: url('https://i.gifer.com/6M8G.gif');
+}
+
+.blog-bg {
+  background-image: url('https://i.gifer.com/1j6F.gif');
+}
+
+.contact-bg {
+  background-image: url('https://i.gifer.com/PX5H.gif');
+}
+
+/* Navigation */
+header {
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header h1 {
+  margin: 0 0 0.5rem 0;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #00ffd1;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #a0f0e0;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  color: #00ffd1;
+  text-shadow: 0 0 8px #00ffd1;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Content Container */
+.content-container {
+  background-color: rgba(0, 0, 0, 0.75);
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #00ffd1cc;
+}
+
+/* Bio Section */
+.bio-section {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #00ffd1;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+/* Projects */
+.project {
+  margin-bottom: 2rem;
+}
+
+.project img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 0.5rem 0 1rem 0;
+  box-shadow: 0 0 10px #00ffd1aa;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00ffd1cc;
+  cursor: pointer;
+}
+
+/* Work Experience */
+.work-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.work-list li {
+  margin-bottom: 1.5rem;
+  border-left: 4px solid #00ffd1;
+  padding-left: 1rem;
+}
+
+.work-img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px #00ffd1cc;
+  cursor: pointer;
+}
+
+/* Blog Entries */
+.blog-entry {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #00ffd1aa;
+  padding-bottom: 1rem;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-entry:hover {
+  background-color: rgba(0, 255, 209, 0.1);
+  box-shadow: 0 0 12px #00ffd1cc;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Contact */
+.content-container ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.content-container ul li a {
+  color: #00ffd1;
+  text-decoration: none;
+}
+
+.content-container ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Buttons (if any) */
+button,
+input[type="submit"] {
+  background-color: #00ffd1;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  color: #000;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  background-color: #00d9bc;
+  box-shadow: 0 0 15px #00ffd1cc;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.75);
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #00ffd1;
+}
